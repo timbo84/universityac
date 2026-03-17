@@ -1,0 +1,179 @@
+.financing {
+  padding: 96px 0;
+}
+
+.card {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, var(--primary-light) 100%);
+  border-radius: 32px;
+  padding: 72px 80px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(249,115,22,0.2) 0%, transparent 60%);
+  border-radius: 50%;
+  top: -100px;
+  right: -100px;
+  pointer-events: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(249,115,22,0.2);
+  border: 1px solid rgba(249,115,22,0.35);
+  color: #fb923c;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 100px;
+  width: fit-content;
+}
+
+.title {
+  font-size: clamp(24px, 3.5vw, 38px);
+  font-weight: 800;
+  color: white;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  max-width: 520px;
+}
+
+.desc {
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.75;
+  max-width: 500px;
+}
+
+.perks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.perks li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255,255,255,0.85);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.cta {
+  width: fit-content;
+  margin-top: 8px;
+}
+
+/* Visual */
+.visual {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.visualCard {
+  width: 260px;
+  height: 160px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 20px;
+  padding: 24px;
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 24px 48px rgba(0,0,0,0.25);
+}
+
+.cardChip {
+  width: 32px;
+  height: 24px;
+  background: linear-gradient(135deg, #fbbf24, #f97316);
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+
+.cardBrand {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+}
+
+.cardLine {
+  font-size: 11px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cardAmount {
+  font-size: 28px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: -0.04em;
+  margin-top: auto;
+}
+
+.cardSub {
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+}
+
+.floatItem {
+  position: absolute;
+  bottom: -16px;
+  right: -20px;
+  background: white;
+  border-radius: 12px;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #16a34a;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 1024px) {
+  .card {
+    grid-template-columns: 1fr;
+    padding: 48px 40px;
+    gap: 40px;
+  }
+  .visual {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .financing {
+    padding: 64px 0;
+  }
+  .card {
+    padding: 36px 24px;
+    border-radius: 24px;
+  }
+}

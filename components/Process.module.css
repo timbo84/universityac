@@ -1,0 +1,131 @@
+.process {
+  background: radial-gradient(ellipse 100% 80% at 50% 0%, rgba(42,80,128,0.5) 0%, transparent 60%),
+    var(--primary-dark);
+}
+
+.labelDark {
+  background: rgba(249,115,22,0.15);
+  color: #fb923c;
+  border: 1px solid rgba(249,115,22,0.25);
+}
+
+.titleLight {
+  color: white;
+}
+
+.subtitleLight {
+  color: rgba(255,255,255,0.65);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.stepTop {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.stepNum {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(249,115,22,0.15);
+  border: 2px solid rgba(249,115,22,0.4);
+  color: #f97316;
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: -0.02em;
+}
+
+.connector {
+  flex: 1;
+  margin-left: 16px;
+  overflow: hidden;
+}
+
+.stepIcon {
+  width: 56px;
+  height: 56px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.stepTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.3;
+}
+
+.stepDesc {
+  font-size: 14.5px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+}
+
+.cta {
+  margin-top: 72px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.ctaText {
+  font-size: 18px;
+  color: rgba(255,255,255,0.75);
+  font-weight: 500;
+}
+
+.ctaActions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .connector {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .ctaActions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .ctaActions .btn {
+    width: 100%;
+  }
+}
