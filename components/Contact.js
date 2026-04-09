@@ -49,7 +49,7 @@ export default function Contact() {
             </p>
 
             <div className={styles.contactCards}>
-              <a href="tel:+13256555555" className={styles.contactCard}>
+              <a href="tel:+13254500481" className={styles.contactCard}>
                 <div className={styles.contactCardIcon}>
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
@@ -57,7 +57,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className={styles.contactCardLabel}>Call Us 24/7</span>
-                  <span className={styles.contactCardValue}>(325) 655-5555</span>
+                  <span className={styles.contactCardValue}>(325) 450-0481</span>
                 </div>
                 <svg className={styles.contactCardArrow} width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -73,7 +73,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <span className={styles.contactCardLabel}>Email Us</span>
-                  <span className={styles.contactCardValue}>info@universityac.com</span>
+                  <span className={styles.contactCardValue}>univac@suddenlink.net</span>
                 </div>
               </div>
 
@@ -117,7 +117,7 @@ export default function Contact() {
                   </svg>
                 </div>
                 <h3>Message Sent!</h3>
-                <p>We&apos;ll get back to you within 1 hour during business hours. For emergencies, call us at <a href="tel:+13256555555">(325) 655-5555</a>.</p>
+                <p>We&apos;ll get back to you within 1 hour during business hours. For emergencies, call us at <a href="tel:+13254500481">(325) 450-0481</a>.</p>
               </div>
             ) : (
               <form className={styles.form} onSubmit={handleSubmit}>
@@ -160,7 +160,7 @@ export default function Contact() {
                       id="phone"
                       name="phone"
                       type="tel"
-                      placeholder="(325) 555-0000"
+                      placeholder="(325)-555-1234"
                       required
                       value={formData.phone}
                       onChange={handleChange}

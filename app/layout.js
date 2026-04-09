@@ -13,6 +13,9 @@ export const metadata = {
     "San Angelo's most trusted heating and cooling company. Over 21 years of residential & commercial HVAC service. Licensed, insured, and available 24/7 for emergencies. Get a free quote today!",
   keywords:
     "HVAC San Angelo, air conditioning repair, heating service, furnace repair, AC installation, University Heating Cooling",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }) {

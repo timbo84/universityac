@@ -32,22 +32,15 @@
   text-decoration: none;
 }
 
-.logoIcon {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
+.logoImage {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  transition: height 0.3s ease;
 }
 
-.logoText {
-  font-size: 22px;
-  font-weight: 800;
-  color: white;
-  letter-spacing: -0.03em;
-  line-height: 1;
-}
-
-.logoText span {
-  color: #f97316;
+.header.scrolled .logoImage {
+  height: 55px;
 }
 
 .nav {

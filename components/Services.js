@@ -1,4 +1,5 @@
 import styles from "./Services.module.css";
+import SpringPromo from "./SpringPromo";
 
 const services = [
   {
@@ -105,6 +106,7 @@ export default function Services() {
           ))}
         </div>
       </div>
+      <SpringPromo />
     </section>
   );
 }
