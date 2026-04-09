@@ -26,15 +26,11 @@ export default function Footer() {
           <div className={styles.grid}>
             <div className={styles.brand}>
               <a href="#" className={styles.logo}>
-                <span className={styles.logoIcon}>
-                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <circle cx="14" cy="14" r="14" fill="#f97316" />
-                    <path d="M8 20 L14 8 L20 20 M10.5 16h7" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </span>
-                <span className={styles.logoText}>
-                  University<span>AC</span>
-                </span>
+                <img
+                  src="/logo.png"
+                  alt="University AC Logo"
+                  className={styles.logoImage}
+                />
               </a>
               <p className={styles.tagline}>
                 San Angelo&apos;s most trusted heating and cooling company. Serving West Texas families and businesses for over 21 years.

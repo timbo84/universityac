@@ -26,6 +26,13 @@
   gap: 10px;
 }
 
+.logoImage {
+  height: 48px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+}
+
 .logoText {
   font-size: 22px;
   font-weight: 800;
